@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Movie Watchlist</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="" />
+
+    <!-- STYLE SHEET LINK -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- GOOGLE FONT LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FONT AWESOME CDN LINK -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="movie-app-container">
+      <header class="header">
+        <div class="titles-wrapper">
+          <h1 class="app-title">Find your film</h1>
+          <h2 class="Watchlist-title">
+            <a href="watchlist.html">My Watchlist</a>
+          </h2>
+        </div>
+
+        <form class="form-container" id="form-container">
+          <div class="search-input">
+            <i class="fa-solid fa-magnifying-glass input-icon"></i>
+            <input type="text" placeholder="Search a movie" id="input-el" />
+          </div>
+          <button class="search-btn" type="submit">Search</button>
+        </form>
+      </header>
+
+      <main>
+        <div class="movie-wrapper" id="movie-wrapper"></div>
+        <div class="movie-display" id="movie-display"></div>
+      </main>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
