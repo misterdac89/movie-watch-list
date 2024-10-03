@@ -27,7 +27,6 @@ formContainer.addEventListener("submit", async (e) => {
     `http://www.omdbapi.com/?t=${movieTitle}&apikey=262ce955&`
   );
 
-  console.log(response)
   const data = await response.json();
 
   if (data.Response === "True") {
@@ -97,6 +96,3 @@ formContainer.addEventListener("submit", async (e) => {
   // Reassignement of the moviesList array
   moviesList = [];
 });
-
-
-
